@@ -1,0 +1,24 @@
+{
+  "name": "ryanabest.github.io",
+  "version": "1.0.0",
+  "description": "portfolio page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanabest/ryanabest.github.io.git"
+  },
+  "author": "Ryan Best",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanabest/ryanabest.github.io/issues"
+  },
+  "homepage": "https://github.com/ryanabest/ryanabest.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
