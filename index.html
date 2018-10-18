@@ -56,17 +56,19 @@
 
       // index
       $("h3").each(function(i) {
-        if (!$(this).hasClass("no-touch")) {
-          $("#index").append("<li><a href='#" + i + "'>" +
-            "<span class='glyphicon glyphicon-chevron-down'></span>  &nbsp;" +
-            $(this).text() + "</a><li>");
-          $(this).prepend("<a id='" + i + "'>");
-         }
-        else {
-          $("#index").append("<li class='no-touch'><a href='#" + i + "'>" +
-            "<span class='glyphicon glyphicon-chevron-down'></span>  &nbsp;" +
-            $(this).text() + "</a><li>");
-          $(this).prepend("<a id='" + i + "'>");
+        if (!$(this).hasClass("no-index")) {
+          if (!$(this).hasClass("no-touch")) {
+            $("#index").append("<li><a href='#" + i + "'>" +
+              "<span class='glyphicon glyphicon-chevron-down'></span>  &nbsp;" +
+              $(this).text() + "</a><li>");
+            $(this).prepend("<a id='" + i + "'>");
+           }
+          else {
+            $("#index").append("<li class='no-touch'><a href='#" + i + "'>" +
+              "<span class='glyphicon glyphicon-chevron-down'></span>  &nbsp;" +
+              $(this).text() + "</a><li>");
+            $(this).prepend("<a id='" + i + "'>");
+          }
         }
       });
 
@@ -118,7 +120,7 @@
 
 
     <h2 class="col-md-10 col-md-offset-1">
-      Partnering with the Metropolitan Museum of Art, students visualize and interpret data published by the Met under their Open Access Policy.  
+      Partnering with the Metropolitan Museum of Art, students visualize and interpret data published by the Met under their Open Access Policy.
     </h2>
 
     <!--YEAR-->
@@ -142,13 +144,65 @@
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
-    <h3 class="col-md-12">Clare Churchouse</h3>
+    <h3 class="col-md-12">Forms of Attraction</h3>
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+
+    <a id="forms-of-attraction"></a>
+    <div href="https://3milychu.github.io/clusteringfashion" img-src="web/img/emily.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://3milychu.github.io/" target="_blank">Emily Chu</a></h3><br><br>
+      <p class=" col-md-3">
+        <span class="title">Forms of Attraction: The Data Behind the Forms We Wear</span>
+      </p>
+      <p class="col-md-9">
+        This is a project that seeks to understand how popular forms in clothing originated from humble beginnings and gained momentum over time. Machine learning was used to extract form from images at the MET's Costume Institute. Items were then clustered with kmeans, a statistical model that can be used to train machines to predict the items that are most similar from the information given.
+        <br><br><b><a href='https://www.informationisbeautifulawards.com/showcase/2652-forms-of-attraction'>Kantar Information is Beautiful 2018 shortlist for People, Language & Identity.</a></b>
+        <!-- <details>
+          <summary>Other projects for the MET:</summary>
+          <a href='https://3milychu.github.io/epochrunway'><span style='color:#e82e21'>Epoch Runway</span></a> and <a href='https://3milychu.github.io/met-erials'><span style='color:#e82e21'>Met-erials</span></a>
+        </details> -->
+      </p>
+    </div>
+
+    <!--PROJECT-->
+
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+    <h3 class="col-md-12">The Migration of Art</h3>
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+
+    <a id="migration-of-art"></a>
+    <div href="https://ryanabest.com/work/MigrationOfArt/" img-src="web/img/MigrationOfArt.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://ryanabest.com/" target="_blank">Ryan Best</a></h3><br><br>
+      <p class=" col-md-3">
+        <span class="title">The Migration of Art</span>
+      </p>
+      <p class="col-md-9">
+        This visualization explores how artwork travels across the globe through ownership changes and exhibitions, focusing on The Met's collection of Van Gogh paintings.
+        <!-- <details>
+          <summary>Other projects for the MET:</summary>
+          <a href='https://ryanabest.github.io/ms1-2018/quant/'><span style='color:#e82e21'>Examining a history of collecting at The Met</span></a>
+        </details> -->
+      </p>
+    </div>
+
+    <!--PROJECT-->
+
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+    <h3 class="col-md-12">Gender and Medium</h3>
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
 
     <a id="clare"></a>
-    <div href="https://churc.github.io/MajorStudio1/Interactive/genderObj/" img-src="web/img/clare.png" class="project col-md-12">
+    <div href="https://churc.github.io/MajorStudio1/Interactive/genderObj/" img-src="web/img/clare2.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://churc.github.io/MajorStudio1/" target="_blank">CLARE CHURCHOUSE</a></h3><br><br>
       <p class=" col-md-3">
         <span class="title">Gender and medium. Who are the most collected women and men in The Met’s Modern & Contemporary Art Collection and what did they make?</span>
       </p>
@@ -167,13 +221,14 @@
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
-    <h3 class="col-md-12">Colleen Mccaffrey</h3>
+    <h3 class="col-md-12">The 36 [Google Street] Views</h3>
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
 
-    <a id="colleen"></a>
+    <a id="views-of-fuji"></a>
     <div href="https://colmccaffrey.github.io/DV5200/project_2/src/" img-src="web/img/colleen.jpg" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://colmccaffrey.github.io/DV5200/" target="_blank">Colleen Mccaffrey</a></h3><br><br>
       <p class=" col-md-3">
         <span class="title">Finding the 36 [Google Street] views of Mount Fuji</span>
       </p>
@@ -186,28 +241,53 @@
       </p>
     </div>
 
+    <!--PROJECT-->
+
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+    <h3 class="col-md-12">Met.erials</h3>
+    <div class="bottom-stripe col-md-12">
+      <div class="bottom-stripe-inner"></div>
+    </div>
+
+    <a id="met-erials"></a>
+    <div href="https://3milychu.github.io/met-erials/" img-src="web/img/meterials.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://3milychu.github.io/" target="_blank">Emily Chu</a></h3><br><br>
+      <p class=" col-md-3">
+        <span class="title">Met.erials</span>
+      </p>
+      <p class="col-md-9">
+        Met-erials provides a new entry into the Met's museum collection by way of their most common material.
+        <details>
+          <summary>Other projects for the MET:</summary>
+          <a href='https://3milychu.github.io/epochrunway'><span style='color:#e82e21'>Epoch Runway</span></a></a>
+        </details>
+      </p>
+    </div>
 
     <!--PROJECT-->
 
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
-    <h3 class="col-md-12">Emily Chu</h3>
+    <h3 class="col-md-12">A History of Collecting</h3>
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
 
-    <a id="emily"></a>
-    <div href="https://3milychu.github.io/clusteringfashion" img-src="web/img/emily.png" class="project col-md-12">
+    <a id="met-erials"></a>
+    <div href="https://ryanabest.com/work/HistoryOfCollecting/" img-src="web/img/CollectingMet.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://ryanabest.com/" target="_blank">Ryan Best</a></h3><br><br>
       <p class=" col-md-3">
-        <span class="title">Forms of attraction: the data behind the forms we wear</span>
+        <span class="title">Examining a History of Collecing at The Met</span>
       </p>
       <p class="col-md-9">
-        This is a project that seeks to understand how popular forms in clothing originated from humble beginnings and gained momentum over time. Machine learning was used to extract form from images at the MET's Costume Institute. Items were then clustered with kmeans, a statistical model that can be used to train machines to predict the items that are most similar from the information given.
-        <details>
+        This visualization dives into one of the world's most widespread collections of human culture, exploring its development over time and its reflection of history.
+        <!-- <details>
           <summary>Other projects for the MET:</summary>
           <a href='https://3milychu.github.io/epochrunway'><span style='color:#e82e21'>Epoch Runway</span></a> and <a href='https://3milychu.github.io/met-erials'><span style='color:#e82e21'>Met-erials</span></a>
-        </details>
+        </details> -->
       </p>
     </div>
 
@@ -217,38 +297,14 @@
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
-    <h3 class="col-md-12">Ryan Best</h3>
-    <div class="bottom-stripe col-md-12">
-      <div class="bottom-stripe-inner"></div>
-    </div>
-
-    <a id="ryan"></a>
-    <div href="https://ryanabest.github.io/ms1-2018/interactivity/" img-src="web/img/ryan.gif" class="project col-md-12">
-      <p class=" col-md-3">
-        <span class="title">The migration of art</span>
-      </p>
-      <p class="col-md-9">
-        This visualization explores how artwork travels across the globe through ownership changes and exhibitions, focusing on The Met's collection of Van Gogh paintings.
-        <details>
-          <summary>Other projects for the MET:</summary>
-          <a href='https://ryanabest.github.io/ms1-2018/quant/'><span style='color:#e82e21'>Examining a history of collecting at The Met</span></a>
-        </details>
-      </p>
-    </div>
-
-
-    <!--PROJECT-->
-
-    <div class="bottom-stripe col-md-12">
-      <div class="bottom-stripe-inner"></div>
-    </div>
-    <h3 class="col-md-12">Suzanne Schmeelk</h3>
+    <h3 class="col-md-12">Albrecht Dürer @ The Met</h3>
     <div class="bottom-stripe col-md-12">
       <div class="bottom-stripe-inner"></div>
     </div>
 
     <a id="suzanne"></a>
     <div href="https://schmeelk.github.io/PGDV5200_MajorStudio/Schmeelk_Final_Quantative_Sprint_v2" img-src="web/img/suzanne.png" class="project col-md-12">
+      <h3 class='col-md-12 no-index'><a href="https://schmeelk.github.io/PGDV5200_MajorStudio/" target="_blank">Suzanne Schmeelk</a></h3><br><br>
       <p class=" col-md-3">
         <span class="title">Albrecht Dürer @ The Met</span>
       </p>
@@ -260,7 +316,7 @@
         </details>
       </p>
     </div>
-    
+
     <!--FOOTER-->
 
     <div class="bottom-stripe col-md-12">
@@ -283,7 +339,7 @@
           <a href="https://churc.github.io/MajorStudio1/">Clare Churchouse</a>
           <br /> <a href="https://colmccaffrey.github.io/DV5200/">Colleen Mccaffrey</a>
           <br /> <a href="https://3milychu.github.io/">Emily Chu</a>
-          <br /> <a href="https://ryanabest.github.io/ms1-2018/">Ryan Best</a>
+          <br /> <a href="https://ryanabest.com/">Ryan Best</a>
           <br /> <a href="https://schmeelk.github.io/PGDV5200_MajorStudio">Suzanne Schmeelk</a>
           <p></p>
 
